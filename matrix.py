@@ -29,9 +29,9 @@ def generateMatrix_B(l, k):
         matrix_B.append(row)
     return matrix_B
 
-matrix_A = generateMatrix_A(3000, 6000)
+matrix_A = generateMatrix_A(300, 600)
 print matrix_A
-matrix_B = generateMatrix_B(9000, 6000)
+matrix_B = generateMatrix_B(900, 600)
 print matrix_B
 matrix_C = matrix_multiplication(matrix_A,matrix_B)
 print matrix_C
