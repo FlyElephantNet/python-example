@@ -6,7 +6,7 @@ def vectorMatrixMultiplication(vector, matrix):
 
 def matrix_multiplication(matrix1,matrix2):
     if len(matrix1[0]) != len(matrix2):
-        print "ERROR! Matrix1 column not equal to Matrix2 row! :D !!"
+        print( "ERROR! Matrix1 column not equal to Matrix2 row! :D !!" )
     else:
         return [[[sum([matrix1[m][x]*matrix2[x][n] for x in range(len(matrix1[m]))]) for n in range(len(matrix2))]] for m in range(len(matrix1))]
 
@@ -30,11 +30,11 @@ def generateMatrix_B(l, k):
     return matrix_B
 
 matrix_A = generateMatrix_A(3, 6)
-print matrix_A
+print( matrix_A )
 matrix_B = generateMatrix_B(9, 6)
-print matrix_B
+print( matrix_B )
 matrix_C = matrix_multiplication(matrix_A,matrix_B)
-print matrix_C
+print( matrix_C )
 
 f = open("ResMatrix.txt", 'w')
 f.write(str(matrix_A) +'\n')
